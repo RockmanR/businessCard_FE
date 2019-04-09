@@ -20,7 +20,7 @@ class Register extends React.Component{
 
     onRegisterClicked = () => {
         this.setState({feedback: ''})
-        fetch('http://localhost:3000/register', {
+        fetch('https://guarded-falls-94772.herokuapp.com/register', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

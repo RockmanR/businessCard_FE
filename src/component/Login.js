@@ -29,7 +29,7 @@ class Login extends React.Component{
     onLoginClicked = () =>{
         console.log('clicked');
         this.setState({feedback: ''})
-        fetch('http://localhost:3000/login', {
+        fetch('https://guarded-falls-94772.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

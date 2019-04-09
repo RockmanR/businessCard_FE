@@ -48,7 +48,7 @@ class UserPagePersonal extends React.Component{
     onUpdateClicked = () => {
         console.log('state is: ', this.state)
         this.setState({feedback: ''})
-        fetch('http://localhost:3000/update', {
+        fetch('https://guarded-falls-94772.herokuapp.com/update', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

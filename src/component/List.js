@@ -8,7 +8,7 @@ class List extends React.Component{
 
     deleteAccount = () => {
         console.log('delete clicked');
-        fetch('http://localhost:3000/delete', {
+        fetch('https://guarded-falls-94772.herokuapp.com/delete', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
