@@ -31,7 +31,7 @@ class App extends React.Component {
     //if(this.state.userRefreshed === false){      // if we already downloaded the full user list, then we don't need to download them again.
       //this.setState( {userRefreshed: true} )
         console.log('downloading full user list');
-        fetch('http://localhost:3000/all', { // for local host: 'http://localhost:3000/all'  and for Heroku: 'https://guarded-falls-94772.herokuapp.com/all'
+        fetch('http://localhost:5000/all', { // for local host: 'http://localhost:3000/all'  and for Heroku: 'https://guarded-falls-94772.herokuapp.com/all'
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
