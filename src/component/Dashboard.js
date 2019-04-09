@@ -16,14 +16,11 @@ class Dashboard extends React.Component {
                 <br/>
                 <br/>
                 <br/>
-                
-                <div style={{ overflowY: 'scroll', border: '1px solid white', height : '700px'}} >
                     <CardDeck>
                     {this.props.fullUserList.map( (user, i) => {
                         return <UserCard key={i} user={user} openPublicPage={this.props.openPublicPage}></UserCard>
                     })}
                     </CardDeck>
-                </div>
                 <br />
                 <br />
                 <br />
